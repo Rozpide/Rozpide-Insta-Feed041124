@@ -15,3 +15,59 @@
 .icon-insta{
     color:black;
 }
+.new-post{
+    display:flex;
+    justify-content: end;
+}
+.cierre {
+    background-color: white; 
+    font-size: 25px;
+    height:50px;
+    flex-direction:row;
+    justify-content: end;
+    border: 6px solid transparent; /* Bordes invisibles inicialmente */
+    transition: border-color 1.5s; /* Suaviza el cambio del color del borde / le da mas tiempo para hacer el cambio medido en segundos */
+  }
+.cierre:hover {
+    background-color: rgb(37, 37, 37);
+    border: 2px solid black;
+  }
+.icono-hover:hover {
+    color: blue;
+    transition: color 1.5s; /* Suaviza el cambio del color del icono / le da mas tiempo para hacer el cambio medido en segundos */
+  }
+.icono-activo {
+    color: blue; /* Color al hacer clic / cambia a color azul cuando se activa con un click */
+  }
+.icono-negro {
+    color: black
+  }
+.form-control{
+    height:100px;
+    margin:10px;
+  }
+.icon-insta{
+    font-weight: bold; font-size: 2em;
+    color:black;
+    
+  }
+.palabra-insta {
+    color: black; 
+    font-size: 30px;
+  }
+.palabra-insta:hover {
+    text-decoration: none;
+    color: black;
+  }
+.gallery-img { 
+     margin: 2px; /* margen de las imagenes de galeria */
+     
+    } 
+.grid-container {
+   display: grid; 
+   grid-template-columns: repeat(3, 1fr); /* por cada fila le añado 3 columnas */ 
+   gap: 5px; /*creo que este anula el anterior, me parecia poco margen */ 
+  } 
+.grid-item img { 
+  width: 100%; 
+  height: auto; }

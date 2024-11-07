@@ -20,10 +20,10 @@
                     <a class="navbar-brand" href="#"> 
                         <i class="fa-brands fa-instagram col-1 icon-insta fa-2x"></i> 
                     </a> 
-                    <a class="navbar-brand icon-insta palabra-insta" href="#" style="color: black;">Instagram</a> 
+                    <a class="navbar-brand icon-insta palabra-insta" href="#" >Instagram</a> 
                 </div> 
                 <div class="d-flex ms-auto"> 
-                    <button class="btn btn-success me-2" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"> Abrir Modal </button>
+                    <button class="btn btn-success me-2" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Nuevo Post </button>
                     <div class="btn-group col-1" role="group" aria-label="Button group with nested dropdown"> 
                         <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-gear fs-5" ></i>
                         </button>
@@ -41,7 +41,7 @@
                 </div> 
             </div> 
         </nav> 
-        <!-- Modal --> 
+        <!-- Modal-que usa el boton Crear Post--> 
          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
             <div class="modal-dialog"> 
                 <div class="modal-content"> 
@@ -59,8 +59,8 @@
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div>
                                         <a class="nav-link palabra-insta" href="#">
-                                            <i class="fa fa-camera palabra-insta fs-4" aria-hidden="true"></i>
-                                            <i class="fa-solid fa-location-dot fs-4"></i>
+                                            <i class="fa fa-camera palabra-insta fs-4 icono-negro" aria-hidden="true"></i>
+                                            <i class="fa-solid fa-location-dot fs-4 icono-negro"></i>
                                         </a>
                                     </div>
 
@@ -77,99 +77,125 @@
                 </div>
             </div>
          </div>
-
+         <!--Vamos a por los iconos que trasladan la presentacion de galeria a tarjetas en columna centrada-->
         <div class="container mt-4">
             <div class="d-flex justify-content-center"> 
                 <ul class="nav nav-tabs" id="myTab" role="tablist"> 
                     <li class="nav-item" role="presentation"> 
                         <a class="nav-link active" id="gallery-tab" data-bs-toggle="tab" href="#gallery" role="tab" aria-controls="gallery" aria-selected="true"> 
-                            <i class="fa-solid fa-table-cells icono:hover fa-3x"></i>  
+                            <i class="fa-solid fa-table-cells icono-hover fa-3x"></i>  
                         </a> 
                     </li> 
                     <li class="nav-item" role="presentation"> 
                         <a class="nav-link" id="cards-tab" data-bs-toggle="tab" href="#cards" role="tab" aria-controls="cards" aria-selected="false"> 
-                            <i class="fa-solid fa-square fa-3x"></i>  
+                            <i class="fa-solid fa-square fa-3x icono-negro icono-hover"></i>  
                         </a> 
                     </li> 
                 </ul> 
             </div>
-
-
-                        
-              
-            <div class="tab-content" id="myTabContent">
-                
-                 
+            <!-- contenido de la etiqueta que da acceso a la galeria --> 
+            <div class="tab-content" id="myTabContent"> 
+                <!-- Galeria de imagenes centradas en filas de 3 con un poco de margen--> 
                  <div class="tab-pane fade show active" id="gallery" role="tabpanel" aria-labelledby="gallery-tab"> 
-                    <div class="row g-0 mt-4"> 
-                        <!--imagenes--> 
-                        <div class="col-md-3"> 
-                            <img src="imagenes/barco1.jpg" class="img-fluid" alt="Imagen 1"> 
+                    <div class="grid-container mt-4"> 
+                        <div class="grid-item">
+                            <img src="imagenes/los_molinos.jpg" alt="Imagen 1">
                         </div> 
-                        <div class="col-md-3"> 
-                            <img src="imagenes/vickingo1.jpg" class="img-fluid" alt="Imagen 2"> 
+                        <div class="grid-item">
+                            <img src="imagenes/los_molinos.jpg" alt="Imagen 2">
                         </div> 
-                        <div class="col-md-3"> 
-                            <img src="imagenes/desembarco1.jpg" class="img-fluid" alt="Imagen 3"> 
+                        <div class="grid-item">
+                            <img src="imagenes/los_molinos.jpg" alt="Imagen 3">
                         </div> 
-                        <div class="col-md-3"> 
-                            <img src="imagenes/vickingo1.jpg" class="img-fluid" alt="Imagen 4"> 
+                        <div class="grid-item">
+                            <img src="imagenes/torres1.jpeg" alt="Imagen 4">
+                        </div> 
+                        <div class="grid-item">
+                            <img src="imagenes/torres1.jpeg" alt="Imagen 5">
+                        </div> 
+                        <div class="grid-item">
+                            <img src="imagenes/torres1.jpeg" alt="Imagen 6">
                         </div>
-                        <div class="col-md-3"> 
-                            <img src="imagenes/vickingo.6.jpg" class="img-fluid" alt="Imagen 1"> 
+                        <div class="grid-item">
+                            <img src="imagenes/los_molinos.jpg" alt="Imagen 1">
                         </div> 
-                        <div class="col-md-3"> 
-                            <img src="imagenes/desembarco1.jpg" class="img-fluid" alt="Imagen 2"> 
+                        <div class="grid-item">
+                            <img src="imagenes/los_molinos.jpg" alt="Imagen 2">
                         </div> 
-                        <div class="col-md-3"> 
-                            <img src="imagenes/vickingo1.jpg" class="img-fluid" alt="Imagen 3"> 
+                        <div class="grid-item">
+                            <img src="imagenes/los_molinos.jpg" alt="Imagen 3">
                         </div> 
-                        <div class="col-md-3"> 
-                            <img src="imagenes/vickingo.6.jpg" class="img-fluid" alt="Imagen 4"> 
+                        <div class="grid-item">
+                            <img src="imagenes/torres1.jpeg" alt="Imagen 4">
+                        </div> 
+                        <div class="grid-item">
+                            <img src="imagenes/torres1.jpeg" alt="Imagen 5">
+                        </div> 
+                        <div class="grid-item">
+                            <img src="imagenes/torres1.jpeg" alt="Imagen 6">
                         </div>
-                        <div class="col-md-3"> 
-                            <img src="imagenes/desembarco1.jpg" class="img-fluid" alt="Imagen 1"> 
+                        <div class="grid-item">
+                            <img src="imagenes/los_molinos.jpg" alt="Imagen 1">
                         </div> 
-                        <div class="col-md-3"> 
-                            <img src="imagenes/vickingo1.jpg" class="img-fluid" alt="Imagen 2"> 
+                        <div class="grid-item">
+                            <img src="imagenes/los_molinos.jpg" alt="Imagen 2">
                         </div> 
-                        <div class="col-md-3"> 
-                            <img src="imagenes/vickingo1.jpg" class="img-fluid" alt="Imagen 3"> 
+                        <div class="grid-item">
+                            <img src="imagenes/los_molinos.jpg" alt="Imagen 3">
                         </div> 
-                        <div class="col-md-3"> 
-                            <img src="imagenes/vickingo.6.jpg" class="img-fluid" alt="Imagen 4"> 
+                        <div class="grid-item">
+                            <img src="imagenes/torres1.jpeg" alt="Imagen 4">
+                        </div> 
+                        <div class="grid-item">
+                            <img src="imagenes/torres1.jpeg" alt="Imagen 5">
+                        </div> 
+                        <div class="grid-item">
+                            <img src="imagenes/torres1.jpeg" alt="Imagen 6">
                         </div>
-                        <div class="col-md-3"> 
-                            <img src="imagenes/desembarco1.jpg" class="img-fluid" alt="Imagen 1"> 
+                        <div class="grid-item">
+                            <img src="imagenes/los_molinos.jpg" alt="Imagen 1">
                         </div> 
-                        <div class="col-md-3"> 
-                            <img src="imagenes/vickingo1.jpg" class="img-fluid" alt="Imagen 2"> 
+                        <div class="grid-item">
+                            <img src="imagenes/los_molinos.jpg" alt="Imagen 2">
                         </div> 
-                        <div class="col-md-3"> 
-                            <img src="imagenes/vickingo.6.jpg" class="img-fluid" alt="Imagen 3"> 
+                        <div class="grid-item">
+                            <img src="imagenes/los_molinos.jpg" alt="Imagen 3">
                         </div> 
-                        <div class="col-md-3"> 
-                            <img src="imagenes/desembarco1.jpg" class="img-fluid" alt="Imagen 4"> 
+                        <div class="grid-item">
+                            <img src="imagenes/torres1.jpeg" alt="Imagen 4">
+                        </div> 
+                        <div class="grid-item">
+                            <img src="imagenes/torres1.jpeg" alt="Imagen 5">
+                        </div> 
+                        <div class="grid-item">
+                            <img src="imagenes/torres1.jpeg" alt="Imagen 6">
                         </div>
-                        <div class="col-md-3"> 
-                            <img src="imagenes/barco1.jpg" class="img-fluid" alt="Imagen 1"> 
+                        <div class="grid-item">
+                            <img src="imagenes/los_molinos.jpg" alt="Imagen 1">
                         </div> 
-                        <div class="col-md-3"> 
-                            <img src="imagenes/vickingo1.jpg" class="img-fluid" alt="Imagen 2"> 
+                        <div class="grid-item">
+                            <img src="imagenes/los_molinos.jpg" alt="Imagen 2">
                         </div> 
-                        <div class="col-md-3"> 
-                            <img src="imagenes/vickingo.6.jpg" class="img-fluid" alt="Imagen 3"> 
+                        <div class="grid-item">
+                            <img src="imagenes/los_molinos.jpg" alt="Imagen 3">
                         </div> 
-                        <div class="col-md-3"> 
-                            <img src="imagenes/desembarco1.jpg" class="img-fluid" alt="Imagen 4"> 
+                        <div class="grid-item">
+                            <img src="imagenes/torres1.jpeg" alt="Imagen 4">
+                        </div> 
+                        <div class="grid-item">
+                            <img src="imagenes/torres1.jpeg" alt="Imagen 5">
+                        </div> 
+                        <div class="grid-item">
+                            <img src="imagenes/torres1.jpeg" alt="Imagen 6">
                         </div> 
                     </div> 
-                </div> 
-                
+                </div>
+
+                <!-- paso a las card en una columna-->
                  <div class="tab-pane fade" id="cards" role="tabpanel" aria-labelledby="cards-tab"> 
                     <div class="d-flex flex-column align-items-center mt-4"> 
                         <!-- tarjetas --> 
-                         <div class="card mb-4" style="width: 18rem;">
+                         <div class="card mb-4" style="width: 30rem;">
                             <h5 class="card-title p-1">Card title</h5> 
                             <img src="imagenes/vickingo1.jpg" class="card-img-top" alt="..."> 
                             <div class="card-body"> 
@@ -178,7 +204,7 @@
                                  
                             </div> 
                         </div> 
-                        <div class="card mb-4" style="width: 18rem;"> 
+                        <div class="card mb-4" style="width: 30rem;"> 
                             <h5 class="card-title p-1">Card title</h5>
                             <img src="imagenes/vickingo.6.jpg" class="card-img-top" alt="..."> 
                             <div class="card-body"> 
@@ -187,7 +213,7 @@
                                  
                             </div> 
                         </div>
-                        <div class="card mb-4" style="width: 18rem;">
+                        <div class="card mb-4" style="width: 30rem;">
                             <h5 class="card-title p-1">Card title</h5> 
                             <img src="imagenes/vickingo1.jpg" class="card-img-top" alt="..."> 
                             <div class="card-body"> 
@@ -196,7 +222,7 @@
                                  
                             </div> 
                         </div> 
-                        <div class="card mb-4" style="width: 18rem;"> 
+                        <div class="card mb-4" style="width: 30rem;"> 
                             <h5 class="card-title p-1">Card title</h5>
                             <img src="imagenes/vickingo.6.jpg" class="card-img-top" alt="..."> 
                             <div class="card-body"> 
@@ -205,7 +231,7 @@
                                  
                             </div> 
                         </div>
-                        <div class="card mb-4" style="width: 18rem;">
+                        <div class="card mb-4" style="width: 30rem;">
                             <h5 class="card-title p-1">Card title</h5> 
                             <img src="imagenes/vickingo1.jpg" class="card-img-top" alt="..."> 
                             <div class="card-body"> 
@@ -214,7 +240,7 @@
                                  
                             </div> 
                         </div> 
-                        <div class="card mb-4" style="width: 18rem;"> 
+                        <div class="card mb-4" style="width: 30rem;"> 
                             <h5 class="card-title p-1">Card title</h5>
                             <img src="imagenes/vickingo.6.jpg" class="card-img-top" alt="..."> 
                             <div class="card-body"> 
