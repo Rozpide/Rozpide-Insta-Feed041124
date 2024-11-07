@@ -1,0 +1,17 @@
+.icon-insta {
+    font-size: 30px;
+    color:black;
+    font-weight: bold;
+}
+.nav-tabs .nav-link { 
+    border: none; 
+    background: transparent; 
+} 
+.nav-tabs .nav-link.active {
+    border: none;
+    background: transparent;
+    color: black; 
+}
+.icon-insta{
+    color:black;
+}
